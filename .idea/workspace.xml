@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29fe166f-b0b8-497e-b5ae-77fae9be53e1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/usercases/Person.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/usercases/ValidFirstName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/usercases/UserDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/usercases/UserDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/usercases/UserDetails.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +41,7 @@
     "Application.UserDetails.executor": "Run",
     "Application.ValidFirstName.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "UC2",
+    "git-widget-placeholder": "UC3",
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
@@ -84,16 +83,5 @@
       <updated>1726589368622</updated>
     </task>
     <servers />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/usercases/UserDetails.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

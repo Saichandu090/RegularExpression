@@ -14,7 +14,7 @@ public class UserDetails
     private static long mobileNumber;
     private static String password;
 
-    public static boolean getReg(String input)
+    public static boolean getRegName(String input)
     {
         Pattern pattern=Pattern.compile("^[A-Z][a-zA-Z ]{2,}$");
         Matcher matcher=pattern.matcher(input);
@@ -22,9 +22,16 @@ public class UserDetails
         return matcher.matches();
     }
 
+    public static boolean getRegEmail(String input)
+    {
+        Pattern pattern=Pattern.compile("^[a-zA-Z0-9_.$-]+(\\.[a-zA-Z0-9]+)?@[a-z]+\\.[a-zA-Z]{2,}(\\.[a-z]+)?$");//abc.xyz@bl.co.in
+        Matcher matcher=pattern.matcher(input);
+
+        return matcher.matches();
+    }
+
     public static void main(String[] args)
     {
-
         Scanner sc=new Scanner(System.in);
         List<Person> list=new ArrayList<Person>();
         while(true)
@@ -32,7 +39,7 @@ public class UserDetails
             System.out.println("Enter your FirstName : ");
             String fn=sc.nextLine();
 
-            if(getReg(fn))
+            if(getRegName(fn))
             {
                 firstName=fn;
                 break;
@@ -46,9 +53,23 @@ public class UserDetails
             System.out.println("Enter your LastName : ");
             String ln=sc.nextLine();
 
-            if(getReg(ln))
+            if(getRegName(ln))
             {
                 lastName=ln;
+                break;
+            }
+            else
+                System.out.println("Invalid last Name!! Please Enter your first letter in UpperCase and at-least 3 characters");
+        }
+
+        while(true)
+        {
+            System.out.println("Enter your Email : ");
+            String mail=sc.nextLine();
+
+            if(getRegEmail(mail))
+            {
+                email=mail;
                 break;
             }
             else
