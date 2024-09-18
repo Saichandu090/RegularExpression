@@ -24,7 +24,7 @@ public class UserDetails
 
     public static boolean getRegEmail(String input)
     {
-        Pattern pattern=Pattern.compile("^[a-zA-Z0-9_.$+-]+(\\.[a-zA-Z0-9]+)?@[a-z0-9]+\\.[a-zA-Z]{2,}(\\.[a-z]+)?$");
+        Pattern pattern=Pattern.compile("^[a-zA-Z0-9_$+-]+(\\.[a-zA-Z0-9]+)?@[a-z0-9]+\\.[a-zA-Z]{2,}(\\.[a-z]+)?$");
         Matcher matcher=pattern.matcher(input);
 
         return matcher.matches();
