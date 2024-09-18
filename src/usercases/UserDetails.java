@@ -24,7 +24,7 @@ public class UserDetails
 
     public static boolean getRegEmail(String input)
     {
-        Pattern pattern=Pattern.compile("^[a-zA-Z0-9_.$-]+(\\.[a-zA-Z0-9]+)?@[a-z]+\\.[a-zA-Z]{2,}(\\.[a-z]+)?$");//abc.xyz@bl.co.in
+        Pattern pattern=Pattern.compile("^[a-zA-Z0-9_.$-]+(\\.[a-zA-Z0-9]+)?@[a-z]+\\.[a-zA-Z]{2,}(\\.[a-z]+)?$");
         Matcher matcher=pattern.matcher(input);
 
         return matcher.matches();
@@ -33,6 +33,14 @@ public class UserDetails
     public static boolean getRegMobNum(String input)
     {
         Pattern pattern=Pattern.compile("^(\\+)?[0-9]{1,3}\s[0-9]{10}$");
+        Matcher matcher=pattern.matcher(input);
+
+        return matcher.matches();
+    }
+
+    public static boolean getRegPass(String input)
+    {
+        Pattern pattern=Pattern.compile("^[a-zA-Z0-9_*%$@]{8,}$");
         Matcher matcher=pattern.matcher(input);
 
         return matcher.matches();
@@ -96,6 +104,20 @@ public class UserDetails
             }
             else
                 System.out.println("Invalid Mobile Number!! Please Enter your Mobile Number starting with country code with one space and 10 digit number");
+        }
+
+        while(true)
+        {
+            System.out.println("Enter your Password : ");
+            String pass=sc.nextLine();
+
+            if(getRegPass(pass))
+            {
+                password=pass;
+                break;
+            }
+            else
+                System.out.println("Invalid Password!! Please Enter your Password with minimum 8 Characters");
         }
     }
 }
