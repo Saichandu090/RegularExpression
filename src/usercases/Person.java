@@ -4,6 +4,16 @@ public class Person
 {
     private String firstName;
     private String lastName;
+
+    Person(String firstName, String lastName, String email, String mobileNumber, String password)
+    {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.mobileNumber = mobileNumber;
+        this.password = password;
+    }
+
     private String email;
     private String  mobileNumber;
     private String password;

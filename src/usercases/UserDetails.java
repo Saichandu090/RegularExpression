@@ -24,7 +24,7 @@ public class UserDetails
 
     public static boolean getRegEmail(String input)
     {
-        Pattern pattern=Pattern.compile("^[a-zA-Z0-9_.$-]+(\\.[a-zA-Z0-9]+)?@[a-z]+\\.[a-zA-Z]{2,}(\\.[a-z]+)?$");
+        Pattern pattern=Pattern.compile("^[a-zA-Z0-9_.$+-]+(\\.[a-zA-Z0-9]+)?@[a-z0-9]+\\.[a-zA-Z]{2,}(\\.[a-z]+)?$");
         Matcher matcher=pattern.matcher(input);
 
         return matcher.matches();
@@ -40,7 +40,8 @@ public class UserDetails
 
     public static boolean getRegPass(String input)
     {
-        Pattern pattern=Pattern.compile("^(?=.*[A-Z])(?=.*[0-9]).{8,}$");
+        Pattern pattern=Pattern.compile("^(?=.*[a-zA-Z])(?=.*\\d){8,}$");
+
         Matcher matcher=pattern.matcher(input);
 
         return matcher.matches();
@@ -117,7 +118,8 @@ public class UserDetails
                 break;
             }
             else
-                System.out.println("Invalid Password!! Please Enter your Password with minimum 8 Characters,Atleast one UpperCase,Atleast one Numeric in it");
+                System.out.println("Invalid Password!! Please Enter your Password with minimum 8 Characters,Atleast one UpperCase,Atleast one Numeric and only one special character in it");
         }
+
     }
 }
