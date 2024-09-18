@@ -5,9 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29fe166f-b0b8-497e-b5ae-77fae9be53e1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/usercases/Assignment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/usercases/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/usercases/Person.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/usercases/UserDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/usercases/UserDetails.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,18 +34,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Assignment.executor": "Run",
-    "Application.Example1.executor": "Run",
-    "Application.UserDetails.executor": "Run",
-    "Application.ValidFirstName.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "UC8",
-    "kotlin-language-version-configured": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Assignment.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Example1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.UserDetails.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ValidFirstName.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;UC8&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Application.Assignment">
+}</component>
+  <component name="RunManager" selected="Application.UserDetails">
     <configuration name="Assignment" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="usercases.Assignment" />
       <module name="RegularExpression" />
@@ -84,8 +81,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Assignment" />
         <item itemvalue="Application.UserDetails" />
+        <item itemvalue="Application.Assignment" />
         <item itemvalue="Application.Example1" />
       </list>
     </recent_temporary>

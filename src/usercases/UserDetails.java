@@ -40,7 +40,7 @@ public class UserDetails
 
     public static boolean getRegPass(String input)
     {
-        Pattern pattern=Pattern.compile("^(?=.*[a-zA-Z])(?=.*\\d){8,}$");
+        Pattern pattern=Pattern.compile("^(?=.*[A-Z])(?=.*[0-9]).{8,}$");
 
         Matcher matcher=pattern.matcher(input);
 
