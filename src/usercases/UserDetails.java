@@ -11,7 +11,7 @@ public class UserDetails
     private static String firstName;
     private static String lastName;
     private static String email;
-    private static long mobileNumber;
+    private static String  mobileNumber;
     private static String password;
 
     public static boolean getRegName(String input)
@@ -25,6 +25,14 @@ public class UserDetails
     public static boolean getRegEmail(String input)
     {
         Pattern pattern=Pattern.compile("^[a-zA-Z0-9_.$-]+(\\.[a-zA-Z0-9]+)?@[a-z]+\\.[a-zA-Z]{2,}(\\.[a-z]+)?$");//abc.xyz@bl.co.in
+        Matcher matcher=pattern.matcher(input);
+
+        return matcher.matches();
+    }
+
+    public static boolean getRegMobNum(String input)
+    {
+        Pattern pattern=Pattern.compile("^(\\+)?[0-9]{1,3}\s[0-9]{10}$");
         Matcher matcher=pattern.matcher(input);
 
         return matcher.matches();
@@ -73,7 +81,21 @@ public class UserDetails
                 break;
             }
             else
-                System.out.println("Invalid last Name!! Please Enter your first letter in UpperCase and at-least 3 characters");
+                System.out.println("Invalid Email!! Please Enter your email with 'lowercase letters@lowercase.lowercase(min 2)' this format");
+        }
+
+        while(true)
+        {
+            System.out.println("Enter your Mobile Number : ");
+            String  num=sc.nextLine();
+
+            if(getRegMobNum(num))
+            {
+                mobileNumber=num;
+                break;
+            }
+            else
+                System.out.println("Invalid Mobile Number!! Please Enter your Mobile Number starting with country code with one space and 10 digit number");
         }
     }
 }

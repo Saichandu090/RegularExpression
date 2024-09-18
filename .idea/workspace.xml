@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="29fe166f-b0b8-497e-b5ae-77fae9be53e1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/usercases/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/usercases/Person.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/usercases/UserDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/usercases/UserDetails.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +42,7 @@
     "Application.UserDetails.executor": "Run",
     "Application.ValidFirstName.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "UC3",
+    "git-widget-placeholder": "UC4",
     "kotlin-language-version-configured": "true"
   }
 }]]></component>

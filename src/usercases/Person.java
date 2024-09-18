@@ -5,7 +5,7 @@ public class Person
     private String firstName;
     private String lastName;
     private String email;
-    private long mobileNumber;
+    private String  mobileNumber;
     private String password;
 
     public String getFirstName() {
@@ -20,7 +20,7 @@ public class Person
         return email;
     }
 
-    public long getMobileNumber() {
+    public String  getMobileNumber() {
         return mobileNumber;
     }
 
@@ -40,7 +40,7 @@ public class Person
         this.email = email;
     }
 
-    public void setMobileNumber(long mobileNumber) {
+    public void setMobileNumber(String  mobileNumber) {
         this.mobileNumber = mobileNumber;
     }
 
