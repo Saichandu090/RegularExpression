@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29fe166f-b0b8-497e-b5ae-77fae9be53e1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/usercases/ValidFirstName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/usercases/Person.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/usercases/ValidFirstName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/usercases/UserDetails.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,9 +24,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/usercases/UserDetails.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2mCnLINFEuwBYWhFMaH1RbXHdMm" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -35,13 +39,14 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Example1.executor": "Run",
+    "Application.UserDetails.executor": "Run",
     "Application.ValidFirstName.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "UC1",
+    "git-widget-placeholder": "UC2",
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.ValidFirstName">
+  <component name="RunManager" selected="Application.UserDetails">
     <configuration name="Example1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Example1" />
       <module name="RegularExpression" />
@@ -49,8 +54,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ValidFirstName" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="usercases.ValidFirstName" />
+    <configuration name="UserDetails" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="usercases.UserDetails" />
       <module name="RegularExpression" />
       <extension name="coverage">
         <pattern>
@@ -64,7 +69,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ValidFirstName" />
+        <item itemvalue="Application.UserDetails" />
         <item itemvalue="Application.Example1" />
       </list>
     </recent_temporary>
@@ -79,5 +84,16 @@
       <updated>1726589368622</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/usercases/UserDetails.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
